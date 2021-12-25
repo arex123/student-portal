@@ -88,7 +88,7 @@ function msg(req){
 
 
     console.log("token=",req.token);
-    var em= "<h3>Dear "+ req.body.name+", welcome to saitm <a href='http://localhost:4000/verify_account?verification_key="+req.token+"'>Verify your account</a>!</h3><br />May the delivery force be with you!";
+    var em= "<h3>Dear "+ req.body.name+", welcome to saitm <a href='https://studentportal0.herokuapp.com/verify_account?verification_key="+req.token+"'>Verify your account</a>!</h3><br />May the delivery force be with you!";
         
     const request = mailjet
     .post("send", {'version': 'v3.1'})
@@ -417,7 +417,7 @@ app.post("/forgetpsd",function(req,res){  //from forgetpsd page
     
 function msg(req){
 
-    var em= "<h3>Dear user, You forget the password right?? if yes <a href='http://localhost:4000/change_password?verification_key="+req.token+"'>Verify your account click on link</a>!</h3><br />May the delivery force be with you!";
+    var em= "<h3>Dear user, You forget the password right?? if yes <a href='https://studentportal0.herokuapp.com/change_password?verification_key="+req.token+"'>Verify your account click on link</a>!</h3><br />May the delivery force be with you!";
         
     const request = mailjet
     .post("send", {'version': 'v3.1'})
