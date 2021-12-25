@@ -1,0 +1,160 @@
+body{
+    background-color: rgba(223, 223, 238,0.1);
+  }  
+  .HeaderContainer{
+    height: 50px;
+    top: 0;
+    left: 0;
+    right: 0;
+    width:100vw;
+    background-color: #fff;
+    position: fixed; 
+    display:flex;
+    padding:8px;
+    -webkit-box-shadow: 0px -2px 22px -4px rgba(0,0,0,0.59);
+    -moz-box-shadow: 0px -2px 22px -4px rgba(0,0,0,0.59);
+    box-shadow: 0px -2px 22px -4px rgba(0,0,0,0.59);
+    }
+    
+    .leftcontent{ 
+      text-align: center;
+      flex: 2;
+    }
+  
+    .middlecontent{
+      background-color: #eee;
+      flex: 4;
+      padding: 3px;
+      display: flex;
+      align-items: center;
+      border-radius: 32px;
+    }
+  
+    .rightcontent{ 
+    flex: 3;
+    line-height: 20px;
+    text-align: right;
+    }
+  
+    .search_icon{
+    height: 27px;
+    margin-left: 15px;
+    margin-right: 13px;
+    }
+  
+    .horizontal_navbar {
+      display: inline;
+      padding: 8px;
+      vertical-align: middle;
+    }
+    
+    .icon{
+      cursor: pointer;
+      height: 40px;
+    }
+  
+    .profile{
+      cursor: pointer;
+      height: 40px;
+      width:  40px;
+      border-radius: 50%;
+    }
+  
+    .Search{
+      width: 40vw;
+      height: 20px;
+      border: none;
+      font-weight: bold;
+      font-size: large;
+      background-color: #eee;
+    }
+  
+    .Search:focus{
+      outline: none;
+    }
+  
+    .Home{
+      margin-right: 15px;
+      cursor: pointer;
+    }
+  
+    
+    .Logout{
+      margin-right: 15px;
+      cursor: pointer;
+    }
+    .container{
+      padding-top: 10vh;
+      display: flex;
+      /* border: solid 1px; */
+      height: 80vh;
+
+    }
+
+    .leftContainer{
+      
+      float: left;
+      flex: 2;
+      text-align: center;
+      padding: 20px 10px;
+      background-color: #fff;
+      
+      -webkit-box-shadow: 0px -2px 22px -4px rgba(0,0,0,0.59);
+      -moz-box-shadow: 0px -2px 22px -4px rgba(0,0,0,0.59);
+      box-shadow: 0px -2px 22px -4px rgba(0,0,0,0.59);
+
+    }
+    
+    .middleContainer{
+  
+      flex: 6;
+      /* -webkit-box-shadow: 0px -2px 22px -4px rgba(0,0,0,0.59); */
+    
+    }
+  
+  
+   #profile-pic{
+    height: 100px;
+    float: left;
+   }
+   li{
+     margin: 5px;
+     list-style: none;
+     text-align: center;
+   }
+   #user{
+     
+     float: right;
+     text-align: left;
+   }
+   #user-info,#user-details{
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    overflow:hidden;
+ 
+   }
+   input{
+     background-color: rgb(168, 164, 158);
+     height: 25px;
+     width: 25vw;
+     border: hidden;
+     text-align: center;
+    }
+    .left-middle{
+    float: left;
+    padding: 10px;
+    height: max-content;
+    text-align: center;
+   }
+   .right-middle{
+     float: right;
+     padding: 10px;
+     height: max-content;
+   }
+
+  .btn{
+    display: flex;
+    justify-content: center;
+  }

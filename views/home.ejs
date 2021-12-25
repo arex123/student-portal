@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <div class="HeaderContainer">
+      <div class="leftcontent">
+       <img class="icon" src="./images/shopLogo.jpeg">
+      </div>
+      <div class="middlecontent">
+      <img class="search_icon" src="images/search3.jpeg">
+
+        <input type="search" placeholder="Search for friends, content and more...." class="Search"></input>
+      </div>
+      <div class="rightcontent">
+        <li class="Home horizontal_navbar w3-xxlarge fa fa-home">Home</li>
+        <li class="horizontal_navbar" > <a href="/chatRoom"> <img class="icon" src="images/msg_icon.png"></a></li>
+        <li class="horizontal_navbar" >  <a href="/profile"><img class="profile" src="images/profilePic.jpeg"/></a> </li>
+        <li class="horizontal_navbar" >  <a href="/classroom"><img class="classimg" src="images/classroom.png"/></a> </li>        
+        <!-- <li class="horizontal_navbar" >  <a href="https://classroom.google.com/"><img class="classimg" src="images/classroom.png"/></a> </li>         -->
+        <li class="horizontal_navbar" > <img class="icon" src="images/notification.jpeg"></li>
+        <li class="Logout horizontal_navbar" ><a href="/logout"> Logout  </a></li>
+      </div>
+    </div>
+    <div class="container">
+
+      <div class="leftContainer">
+        <hr>
+        <li  ><a id="syllabus" href="#" >Syllabus</a></li><hr>
+        <li><a id="marks" href="#">MarkSheet </a></li><hr>
+        <li><a id="fees" href="#">Fees Status</a> </li><hr>
+        <li><a id="Attendance" href="#">Attendance</a></li><hr>
+        <li><a id="notes" href="#">Study</a></li><hr>
+      </div>
+      
+      <div class="middleContainer">
+        <table id="table" >
+          <tr>
+          <th>Sno</th>
+          <th>Description</th>
+          <th>Status</th>
+          <th>Download</th>
+          </tr>
+        
+        </table>
+       
+      </div>
+      <div class="rightContainer">
+        <img class="event" src="images/event1.png" alt="">
+        <img class="event" src="images/event2.png" alt="">
+        <img class="event" src="images/event3.png" alt="">
+      </div>
+    </div>
+  
+    <script>
+
+
+      const table = document.getElementById("table");
+
+      const syllabus = document.getElementById("syllabus");
+      const marks = document.getElementById("marks");
+      const fees = document.getElementById("fees");
+      const Attendance = document.getElementById("Attendance");
+      const notes = document.getElementById("notes");
+      // syllabus.click();
+
+
+      function clear(){
+
+        while (table.rows.length > 1) {
+
+          table.removeChild(table.lastChild);
+      
+        }
+
+
+        syllabus.className="";
+        marks.className="";
+        fees.className="";
+        Attendance.className="";
+        notes.className="";
+      }
+
+
+      syllabus.addEventListener("click",function(){
+        
+
+
+        if(syllabus.className=="active"){
+          return;
+        }
+
+        clear();
+
+
+        syllabus.className="active";
+
+        const xhttp = new XMLHttpRequest();              
+
+        xhttp.addEventListener("load",function(res){
+
+          var obj = JSON.parse(xhttp.responseText);
+          console.log(obj);
+
+          var obj1 = {
+            view: "view",
+            download: "download",
+            size: obj.Sem
+          };
+
+          createDom(obj,obj1);
+
+        });
+
+          
+          xhttp.open("get", "/fetch",true);
+          xhttp.setRequestHeader('Content-Type', 'application/json');
+          xhttp.send(); 
+      
+          
+      });
+
+
+      marks.addEventListener("click",function(){
+
+        
+        if(marks.className=="active"){
+          return;
+        }
+
+        clear();
+
+
+        marks.className="active";
+        
+
+        const xhttp = new XMLHttpRequest();              
+
+        xhttp.addEventListener("load",function(res){
+
+
+
+          var obj = JSON.parse(xhttp.responseText);
+          console.log(obj);
+
+          var obj1 = {
+            view: "view",
+            download: "download",
+            size: obj.Sem-1
+          };
+
+          createDom(obj,obj1);
+
+        });
+
+          
+          xhttp.open("get", "/fetch",true);
+          xhttp.setRequestHeader('Content-Type', 'application/json');
+          xhttp.send(); 
+    
+      });
+
+      fees.addEventListener("click",function(){
+          
+        if(fees.className=="active"){
+          return;
+        }
+
+        clear();
+
+
+        fees.className="active";
+
+        
+        const xhttp = new XMLHttpRequest();              
+
+        xhttp.addEventListener("load",function(res){
+
+
+
+          var obj = JSON.parse(xhttp.responseText);
+          console.log(obj);
+
+          var obj1 = {
+            view: "pending",
+            download: "receipt",
+            size: obj.Sem
+          };
+
+          createDom(obj,obj1);
+      });
+
+          
+          xhttp.open("get", "/fetch",true);
+          xhttp.setRequestHeader('Content-Type', 'application/json');
+          xhttp.send(); 
+    
+        });
+
+
+         Attendance.addEventListener("click",function(){
+          
+        if(Attendance.className=="active"){
+          return;
+        }
+
+        clear();
+
+
+        Attendance.className="active";
+
+
+
+
+        });
+        
+        notes.addEventListener("click",function(){
+          
+          
+        if(notes.className=="active"){
+          return;
+        }
+
+        clear();
+
+
+        notes.className="active";  
+
+        
+        const xhttp = new XMLHttpRequest();              
+
+        xhttp.addEventListener("load",function(res){
+
+
+
+          var obj = JSON.parse(xhttp.responseText);
+          console.log(obj);
+
+          var obj1 = {
+            view: "view",
+            download: "download",
+            size: obj.Sem
+          };
+
+          createDom(obj,obj1);
+
+        });
+
+          
+          xhttp.open("get", "/fetch",true);
+          xhttp.setRequestHeader('Content-Type', 'application/json');
+          xhttp.send(); 
+    
+
+        });
+
+
+
+
+        function createDom(obj,obj1){
+
+          for(let i=0;i<obj1.size;i++){
+
+            let tr = document.createElement("tr");
+            let sno = document.createElement("td");
+            sno.innerText= i+1;
+            let dsc = document.createElement("td");
+            dsc.innerText= obj.Branch+" sem:" + (i+1) ;
+            let view = document.createElement("td");
+            view.id="view"+i;
+            view.innerText= obj1.view;
+            let download = document.createElement("td");
+            download.id="download"+i;
+
+            download.innerText=obj1.download;
+            tr.appendChild(sno);
+            tr.appendChild(dsc);
+            tr.appendChild(view);
+            tr.appendChild(download);
+
+            table.appendChild(tr);
+
+            }
+
+        }
+
+    </script>
+</body>
+</html>

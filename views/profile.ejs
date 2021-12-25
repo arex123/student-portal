@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/profile.css">
+</head>
+<body>
+    <div class="HeaderContainer">
+      <div class="leftcontent">
+        <a href="/"> <img class="icon" src="./images/shopLogo.jpeg"></a>
+      </div>
+      <div class="middlecontent">
+      <img class="search_icon" src="images/search3.jpeg">
+
+        <input type="search" placeholder="Search for friends, content and more...." class="Search"></input>
+      </div>
+      <div class="rightcontent">
+        <li class="Home horizontal_navbar"><a href="/"> Home</a></li>
+
+        <li class="horizontal_navbar" > <img class="icon" src="images/msg_icon.png"></li>
+        <li class="horizontal_navbar" > <img class="profile" src="images/profilePic.jpeg"/></li>
+        <li class="horizontal_navbar" > <img class="icon" src="images/notification.jpeg"></li>
+        <li class="Logout horizontal_navbar"><a href="/logout">Logout</a>  </li>
+      </div>
+    </div>
+    <div class="container">
+
+      <div class="leftContainer">
+        <div id="user-info">
+          <img src="images/add_pic.jpg" id="profile-pic">
+          <div id="user">
+          <li id="user-name">name</li>
+          <li id="email"><%=email%></li>
+          <li id="contact">Contact</li>
+          <a href="/forgetpass" id="change-pass">Change Password</a>
+          </div>
+        </div>
+       
+      
+
+
+      </div>
+      <div class="middleContainer">
+      
+        <div id="user-details">
+          
+          <!-- <form action="" method="post"> -->
+            <div class="left-middle">
+              <h3>Madatory: </h3>
+              <li>Regisration ID </li> <input type="text" id="reg"/>
+              <li>Roll no </li><input type="text" id="rollno"/>
+              <li>Course</li><input type="text" id="course"/>            
+              <li>Branches </li><input type="text" id="Branches"/>
+              <li>Semester </li><input type="text" id="Semester"/>
+            </div>
+            <div class="right-middle">
+              <h3>Optional: </h3>
+            <li>Skills </li><input type="text" id="skills"/>
+            <li>Linkedin </li><input type="text" id="Linkedin"/>
+            <li>Github </li><input type="text" id="Github"/>
+            <li>Instagram </li><input type="text" id="Instagram"/>
+
+            <li>Portfolio </li><input type="text" id="Portfolio"/>
+          </div>
+
+          <!-- </form> -->
+          
+        </div>
+        <div class="btn">  <button type="button" onclick="save()" >Update</button> </div>
+      </div>
+     
+    </div>
+  
+    <script>
+      
+     
+
+      fetch();
+      function fetch(){
+
+        var obj ={
+          email: '<%=email%>',
+          key: "hello"
+        };
+        
+
+        // console.log("script function"+ obj);        
+        var xhttp = new XMLHttpRequest();              
+        // Typical action to be performed when the document is ready:
+        
+        
+        xhttp.addEventListener("load",function(res){
+
+          var obj = JSON.parse(xhttp.responseText);
+          console.log(obj);
+
+        document.getElementById("reg").value=obj.Regid;
+        document.getElementById("Branches").value=obj.Branch;
+        document.getElementById("Semester").value=obj.Sem;
+        document.getElementById("skills").value=obj.Skills;
+        document.getElementById("rollno").value=obj.rollno;
+        document.getElementById("Linkedin").value=obj.Linkedin;
+        document.getElementById("Github").value=obj.Github;
+        document.getElementById("Instagram").value=obj.Instagram;
+        document.getElementById("course").value=obj.Course;
+        document.getElementById("Portfolio").value=obj.Portfolio;
+        
+        document.getElementById("user-name").innerText=obj.name;
+        document.getElementById("contact").innerText=obj.Contact;
+
+        });
+
+        xhttp.open("get", "/fetch",true);
+        xhttp.setRequestHeader('Content-Type', 'application/json');
+        xhttp.send(); 
+
+
+        }
+
+
+        function save(){
+          
+              var obj ={   
+              email: '<%=email%>',
+              Regid: document.getElementById("reg").value,
+              Branch: document.getElementById("Branches").value,
+              Sem: document.getElementById("Semester").value,
+              Skills: document.getElementById("skills").value,
+              rollno: document.getElementById("rollno").value,
+              Linkedin: document.getElementById("Linkedin").value,
+              Github: document.getElementById("Github").value,
+              Instagram: document.getElementById("Instagram").value,
+              Course: document.getElementById("course").value,
+              Portfolio: document.getElementById("Portfolio").value
+              }
+
+         var xhttp = new XMLHttpRequest();              
+        // Typical action to be performed when the document is ready:
+        
+        
+        xhttp.addEventListener("load",function(res){
+
+          console.log("sended succesfully");
+
+        });
+        xhttp.open("post", "/save",true);
+        // xhttp.setRequestHeader('Content-Type', 'application/url-encoded');
+        xhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+
+       
+        xhttp.send(JSON.stringify(obj));
+
+        // console.log(obj);
+      }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/classStyles.css">
+    <!-- <link rel="stylesheet" href="./index.css"> -->
+    <title>ClassRoom</title>
+</head>
+<body>
+    
+    <div class="HeaderContainer">
+        <div class="leftcontent">
+         <img class="icon" src="./images/shopLogo.jpeg">
+        </div>
+        <div class="middlecontent">
+        <img class="search_icon" src="images/search3.jpeg">
+  
+          <input type="search" placeholder="Search for friends, content and more...." class="Search"></input>
+        </div>
+        <div class="rightcontent">
+          <li class="Home horizontal_navbar w3-xxlarge fa fa-home"><a href="/home"> Home  </a></li>
+          <li class="horizontal_navbar" > <a href="https://my-chatcordroom.herokuapp.com/"> <img class="icon" src="images/msg_icon.png"> </a></li>
+          <li class="horizontal_navbar" >  <a href="/profile"><img class="profile" src="images/profilePic.jpeg"/></a> </li>
+          <li class="horizontal_navbar" > <img class="icon" src="images/notification.jpeg"></li>
+          <li class="Logout horizontal_navbar" ><a href="/logout"> Logout  </a></li>
+        </div>
+      </div>
+
+      <h2 id="welcome">Hello <%=user.name%> welcome to the ClassRoom</h2>
+
+      <div class="classContainer">
+        
+        
+        <div class="left">
+          <h2 id="left">Assignments</h2>
+          <hr>
+        </div>
+        
+        <div class="right">
+          <h2 id="right">Notice</h2>
+          <hr>
+
+        </div>
+
+      </div>
+
+      <div class="content">
+        
+        <ul class="UL">
+          <!-- <li>Subjects</li> -->
+
+          <button class="accordion">Subjects</button>
+          <div class="panel">
+          </div>
+          <button class="accordion">Practicals</button>
+          <div class="panel">
+          </div>
+          <button class="accordion">ClassMates</button>
+          <div class="panel">
+            <p>ClassMates Name </p>
+          </div>
+          <button class="accordion">Teachers</button>
+          <div class="panel">
+            <p>Teachers names</p>
+          </div>
+
+        </ul>
+      </div>
+
+
+<script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
+
+  console.log("<%=user.name%>"); //aditya
+  console.log("<%=user.Course%>"); //Btech
+  console.log("<%=user.Branch%>");  //cse
+  console.log("<%=user.Sem%>"); //7
+ 
+  let subName = document.querySelector(".panel");
+  
+  let subcliked = false;
+  function addsubtodom(element,obj){
+    if(subcliked==false){
+    for(let i in obj){
+      let p = document.createElement("a");
+      p.innerText= i;
+      p.href = obj[i].notes;
+      p.setAttribute("class","subs");
+      element.appendChild(p);
+
+    }
+    subcliked=true;
+
+    }
+  }
+
+  let practclicked = false;
+  function addpractodom(element,obj){
+    if(practclicked==false){
+    for(let i in obj){
+      let p = document.createElement("a");
+      p.innerText= i;
+      p.href = obj[i];
+      p.setAttribute("class","subs");
+      element.appendChild(p);
+
+    }
+    practclicked=true;
+
+    }
+  }
+
+  let sub = document.getElementsByClassName("accordion")[0];
+  let pract = document.getElementsByClassName("accordion")[1];
+  
+  sub.addEventListener("click",()=>{
+      
+      var xhttp = new XMLHttpRequest();              
+      // Typical action to be performed when the document is ready:
+      
+      
+      xhttp.addEventListener("load",function(res){
+        var obj = JSON.parse(xhttp.responseText);
+        console.log("daa",obj);
+        addsubtodom(document.getElementsByClassName("panel")[0],obj);
+        
+      });
+      xhttp.open("get", "/subdata",true);
+      xhttp.setRequestHeader('Content-Type', 'application/json');
+      xhttp.send(); 
+      
+    
+    })
+  pract.addEventListener("click",()=>{
+    var xhttp = new XMLHttpRequest();
+    xhttp.addEventListener("load",function(res){
+      var pobj = JSON.parse(xhttp.responseText);
+      console.log("practical",pobj);
+      addpractodom(document.getElementsByClassName("panel")[1],pobj);
+      
+    });
+      
+    xhttp.open("get", "/pracdata",true);
+    xhttp.setRequestHeader('Content-Type', 'application/json');
+    xhttp.send(); 
+      
+    
+  })
+
+
+
+
+</script>
+</body>
+</html>
