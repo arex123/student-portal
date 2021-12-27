@@ -305,11 +305,19 @@
               "notes":"notes link nn"
             }
           },
-          "practicals": {
-            "CN labs": {},
-            "DAA Lab": {},
-            "programming in java labs": {},
-            "wt lab": {}
+          "practical": {
+            "CN labs": {
+              "notes":"notes link nn"
+            },
+            "DAA Lab": {
+              "notes":"notes link nn"
+            },
+            "programming in java labs": {
+              "notes":"notes link nn"
+            },
+            "wt lab": {
+              "notes":"notes link nn"
+            }
           }
         },
         "6": {
@@ -330,23 +338,19 @@
 
                 "Neural Network" : { 
                   "notes":"notes link nn"
-
                 }
             ,"Web Mining" : { 
               "notes":"anchor tag"
-
             }
             ,"Network security and cryptography" : { 
               "notes":"anchor tag"
-
             }
             ,"English for Professionals" : { 
-              "notes":"anchor tag"
-            }
+              "notes":"anchor tag"            }
             },
             "practical":{
               "NN labs":{
-                "notes":"link"
+                "notes":"link" 
               }
             },
             "content":["syllabus","notes","QP" ],

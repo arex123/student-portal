@@ -8,32 +8,31 @@
     <link rel="stylesheet" href="./css/profile.css">
 </head>
 <body>
-    <div class="HeaderContainer">
-      <div class="leftcontent">
-        <a href="/"> <img class="icon" src="./images/shopLogo.jpeg"></a>
-      </div>
-      <div class="middlecontent">
-      <img class="search_icon" src="images/search3.jpeg">
-
-        <input type="search" placeholder="Search for friends, content and more...." class="Search"></input>
-      </div>
-      <div class="rightcontent">
-        <li class="Home horizontal_navbar"><a href="/"> Home</a></li>
-
-        <li class="horizontal_navbar" > <img class="icon" src="images/msg_icon.png"></li>
-        <li class="horizontal_navbar" > <img class="profile" src="images/profilePic.jpeg"/></li>
-        <li class="horizontal_navbar" > <img class="icon" src="images/notification.jpeg"></li>
-        <li class="Logout horizontal_navbar"><a href="/logout">Logout</a>  </li>
-      </div>
+  <div class="HeaderContainer">
+    <div class="leftcontent">
+     <h1 class="logo1"><a href="/" style="text-decoration: none; color: black;"> StudentPortal</a></h1>
     </div>
+    <div class="middlecontent">
+      <li class="horizontal_navbar"><a href="/"><img class="icon" src="images/home.png"></a></li>
+      <li class="horizontal_navbar" > <a href="https://my-chatcordroom.herokuapp.com/"> <img class="icon" src="images/msg_icon.png"></a></li>
+      <li class="horizontal_navbar" >  <a href="/classroom"><img class="classimg" src="images/classroom.png"/></a> </li>        
+      <!-- <li class="horizontal_navbar" >  <a href="https://classroom.google.com/"><img class="classimg" src="images/classroom.png"/></a> </li>         -->
+      <li class="horizontal_navbar" > <img class="icon" src="images/notification.jpeg"></li>
+    </div>
+    <div class="rightcontent">
+      <!-- <li class="Logout horizontal_navbar" ><a href="/login"> Login </a></li> -->
+      <li class="Logout horizontal_navbar" ><a href="/logout"> Logout  </a></li>
+      <li class="horizontal_navbar" >  <a href="/profile"><img class="profile" src="images/profilePic.jpeg"/></a> </li>
+    </div>
+  </div>
     <div class="container">
 
       <div class="leftContainer">
         <div id="user-info">
           <img src="images/add_pic.jpg" id="profile-pic">
           <div id="user">
-          <li id="user-name">name</li>
-          <li id="email"><%=email%></li>
+          <li id="user-name"><%=info.name%></li>
+          <li id="email"><%=info.email%></li>
           <li id="contact">Contact</li>
           <a href="/forgetpass" id="change-pass">Change Password</a>
           </div>
@@ -50,39 +49,89 @@
           <!-- <form action="" method="post"> -->
             <div class="left-middle">
               <h3>Madatory: </h3>
-              <li>Regisration ID </li> <input type="text" id="reg"/>
-              <li>Roll no </li><input type="text" id="rollno"/>
-              <li>Course</li><input type="text" id="course"/>            
-              <li>Branches </li><input type="text" id="Branches"/>
-              <li>Semester </li><input type="text" id="Semester"/>
+              <li>Regisration ID </li> <input type="text" id="reg" class="Input" disabled/>
+              <li>Roll no </li><input type="text" id="rollno" class="Input" disabled/>
+              <li>Course</li>
+              <select name="course" id="course" class="Input" disabled style="color: black; background-color: rgb(173, 166, 166);">
+                <option value="Btech">Btech</option>
+                <option value="BBA">BBA</option>
+                <option value="BCA">BCA</option>
+              </select>           
+              <li>Branches </li>
+              <!-- <input type="text" id="Branches"/> -->
+              <select name="Branches" id="Branches" class="Input" disabled style="color: black; background-color: rgb(173, 166, 166);">
+                <option value="cse">cse</option>
+                <option value="ee">ee</option>
+                <option value="etc">etc</option>
+                <option value="me">me</option>
+                <option value="civil">civil</option>
+              </select> 
+              <li>Semester </li>
+              <!-- <input type="text" id="Semester"/> -->
+              <select name="Semester" id="Semester" class="Input" disabled style="color: black; background-color: rgb(173, 166, 166);">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+              </select>
             </div>
             <div class="right-middle">
               <h3>Optional: </h3>
-            <li>Skills </li><input type="text" id="skills"/>
-            <li>Linkedin </li><input type="text" id="Linkedin"/>
-            <li>Github </li><input type="text" id="Github"/>
-            <li>Instagram </li><input type="text" id="Instagram"/>
+            <li>Skills </li><input type="text" id="skills" class="Input" class="Input" disabled/>
+            <li>Linkedin </li><input type="text" id="Linkedin" class="Input" disabled/>
+            <li>Github </li><input type="text" id="Github" class="Input" disabled/>
+            <li>Instagram </li><input type="text" id="Instagram" class="Input" disabled/>
 
-            <li>Portfolio </li><input type="text" id="Portfolio"/>
+            <li>Portfolio </li><input type="text" id="Portfolio" class="Input" disabled/>
           </div>
 
           <!-- </form> -->
           
         </div>
-        <div class="btn">  <button type="button" onclick="save()" >Update</button> </div>
+        <div class="btn">  <button type="button" id="editbtn" onclick="makeEditable()" >Edit</button> </div>
+        <div class="btn">  <button type="button" id="updatebtn" onclick="save()" style="display: none;" >Update</button> </div>
       </div>
      
     </div>
   
     <script>
-      
-     
+
+        function makeEditable(){
+          
+          let edbt = document.getElementById("editbtn");
+          edbt.style.display="none";
+          let upbt = document.getElementById("updatebtn");
+          upbt.style.display="block";
+
+          // selecttag();
+          inputtag();
+          
+          function inputtag(){
+            let editable = document.getElementsByClassName('Input');
+              for(let i in editable){
+                editable[i].removeAttribute("disabled");
+              }
+          }
+
+        }
+        
+
+      // function selecttag(){
+      //   let selects = document.getElementsByClassName('sIpt');
+      //     for(let i in selects){
+      //       selects[i].removeAttribute("disabled");
+      //     }
+      // }
 
       fetch();
       function fetch(){
 
         var obj ={
-          email: '<%=email%>',
+          email: '<%=info.email%>',
           key: "hello"
         };
         
@@ -122,9 +171,13 @@
 
 
         function save(){
+          let edbt = document.getElementById("editbtn");
+          edbt.style.display="block";
+          let upbt = document.getElementById("updatebtn");
+          upbt.style.display="none";
           
               var obj ={   
-              email: '<%=email%>',
+              email: '<%=info.email%>',
               Regid: document.getElementById("reg").value,
               Branch: document.getElementById("Branches").value,
               Sem: document.getElementById("Semester").value,

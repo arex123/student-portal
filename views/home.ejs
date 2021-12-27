@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
-    <div class="HeaderContainer">
+    <!-- <div class="HeaderContainer">
       <div class="leftcontent">
        <img class="icon" src="./images/shopLogo.jpeg">
       </div>
@@ -23,11 +23,79 @@
         <li class="horizontal_navbar" > <a href="/chatRoom"> <img class="icon" src="images/msg_icon.png"></a></li>
         <li class="horizontal_navbar" >  <a href="/profile"><img class="profile" src="images/profilePic.jpeg"/></a> </li>
         <li class="horizontal_navbar" >  <a href="/classroom"><img class="classimg" src="images/classroom.png"/></a> </li>        
-        <!-- <li class="horizontal_navbar" >  <a href="https://classroom.google.com/"><img class="classimg" src="images/classroom.png"/></a> </li>         -->
-        <li class="horizontal_navbar" > <img class="icon" src="images/notification.jpeg"></li>
+        <li class="horizontal_navbar" >  <a href="https://classroom.google.com/"><img class="classimg" src="images/classroom.png"/></a> </li>        
+        <!-- <li class="horizontal_navbar" > <img class="icon" src="images/notification.jpeg"></li>
         <li class="Logout horizontal_navbar" ><a href="/logout"> Logout  </a></li>
       </div>
+    </div> 
+  
+    css
+
+    
+
+  .HeaderContainer{
+    /* overflow: hidden; */
+    height: 50px;
+    top: 0;
+    left: 0;
+    right: 0;
+    width:100vw;
+    background-color: #fff;
+    position: fixed; 
+    display:flex;
+    padding:8px;
+    -webkit-box-shadow: 0px -2px 22px -4px rgba(0,0,0,0.59);
+    -moz-box-shadow: 0px -2px 22px -4px rgba(0,0,0,0.59);
+    box-shadow: 0px -2px 22px -4px rgba(0,0,0,0.59);
+    }
+    
+    .leftcontent{ 
+      text-align: center;
+      flex: 2;
+    }
+  
+    .middlecontent{
+      background-color: #eee;
+      flex: 4;
+      padding: 3px;
+      display: flex;
+      align-items: center;
+      border-radius: 32px;
+    }
+  
+    .rightcontent{ 
+      /* float:left; */
+      display: flex;
+    /* flex: 3; */
+      align-items: center;
+    line-height: 20px;
+    text-align: right;
+    }
+  
+  
+  
+  --> 
+  
+  
+  
+    <div class="HeaderContainer">
+      <div class="leftcontent">
+       <h1 class="logo1"> <a href="/" style="text-decoration: none; color: black;"> StudentPortal</a></h1>
+      </div>
+      <div class="middlecontent">
+        <li class="horizontal_navbar"> <a href="/"> <img class="icon" src="images/home.png"></a></li>
+        <li class="horizontal_navbar" > <a href="https://my-chatcordroom.herokuapp.com/"> <img class="icon" src="images/msg_icon.png"></a></li>
+        <li class="horizontal_navbar" >  <a href="/classroom"><img class="classimg" src="images/classroom.png"/></a> </li>        
+        <!-- <li class="horizontal_navbar" >  <a href="https://classroom.google.com/"><img class="classimg" src="images/classroom.png"/></a> </li>         -->
+        <li class="horizontal_navbar" > <img class="icon" src="images/notification.jpeg"></li>
+      </div>
+      <div class="rightcontent">
+        <!-- <li class="Logout horizontal_navbar" ><a href="/logout"> Login </a></li>
+        <li class="Logout horizontal_navbar" ><a href="/logout"> Logout  </a></li> -->
+        <li class="horizontal_navbar" >  <a href="/profile"><img class="profile" src="images/profilePic.jpeg"/></a> </li>
+      </div>
     </div>
+
     <div class="container">
 
       <div class="leftContainer">

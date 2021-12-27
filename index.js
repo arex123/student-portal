@@ -285,34 +285,49 @@ function checkSession(req,res,next){
         console.log("session created and funciton got bypasses");
         next();
     }else{
-        console.log("session not created");
-        res.redirect('/');
-    }
-
-    
+        console.log("session not created directing to the login page");
+        res.redirect('/login');
+    }    
 }
+
+app.get('/login',(req,res)=>{
+    res.render("login.html");
+})
 
 app.get('/home',checkSession,function(req,res){
         
     res.render('home.ejs',{
         email: req.session.email
     });
-    // res.render('screen.html')
     
 
 });
 
 
 app.get('/profile',checkSession,function(req,res){
+    
+    db.collection('details').findOne({ email: req.session.email }, function(err, user){
+        if(err){
+            console.log(err);
+        }else{
 
-    res.render('profile.ejs',{
-        email:req.session.email
+            let name = user.name;
+            let email = req.session.email;
+            let info = {   name,email  }
+            console.log(name," ",email);
+            res.render('profile.ejs',{info});
+            
+         }
+
     });
 
 });
 
 
 app.get('/classroom',checkSession,function(req,res){
+    // let sess = req.session;
+    // console.log(sess);
+    // if(sess.email) {               
 
     db.collection('details').findOne({ email: req.session.email }, function(err, user){
         if(err){
@@ -325,22 +340,13 @@ app.get('/classroom',checkSession,function(req,res){
             let Branch = user.Branch;
             let course = user.Course;
             console.log(sem," ",Branch," ",course);
-            
-            
-            //json file reading
-            
-            // let buffer = fs.readFileSync("./data.json");
-            // let data = JSON.parse(buffer);
-            // console.log("daa",data[course][Branch][sem].subjects);
-            // let obj = data[course][Branch][sem].subjects;
-            // console.log(obj.length);
             res.render('classroom.ejs',{ user});
-
             
          }
 
     });
-
+    // }
+    
 
 
 });
@@ -384,10 +390,6 @@ app.post("/save",function(req,res){
     db.collection('details').update({email:req.session.email},{$set:user1});
      
 });
-
-
-
-
 
 //change password
 
@@ -496,11 +498,12 @@ app.post('/updatepsd',function(req,res){
 
 //previos error got solved now it does not work becaus express.static load bydefault index.html page 
 app.get('/',(req,res) =>{
-    let sess = req.session;
-    if(sess.email) {
-        return res.redirect('home');
-    }
-    res.render('login.html');
+    // let sess = req.session;
+    // console.log(sess);  //sess.email will tell if session is created or not
+    // if(sess.email) {  
+    //     return res.redirect('home');
+    // }
+    res.render('home');
 
 });
 
@@ -511,7 +514,7 @@ app.get('/subdata',(req,res)=>{
             console.log(err);
         }else{
 
-            console.log("user  hello",user);
+            console.log("user hello",user);
             
             let sem = user.Sem;
             let Branch = user.Branch;
@@ -561,96 +564,6 @@ app.get('/pracdata',(req,res)=>{
 
 
 })
-
-
-// //char room
-
-// app.get('/chatRoom',(req,res)=>{
-//     const path = require("path");
-//     const http = require("http");
-//     const socketio = require("socket.io");
-//     const server = http.createServer(app);
-//     const io = socketio(server);
-//     const formatMessage = require("./util/message");
-   
-    
-//     const {
-//         userJoin,
-//         getCurrentUser,
-//         userLeave,
-//         getRoomUsers,
-//     } = require("./util/users");
-    
-    
-//     app.use(express.static(path.join(__dirname, "public")));
-//     const bot = "chadbox bot";
-    
-//     io.on("connection", (socket) => {
-//     //first code-> // console.log('New WS connection...');
-  
-//     socket.on("joinRoom", ({ username, room }) => {
-//       const user = userJoin(socket.id, username, room);
-//       socket.join(user.room);
-  
-//       //broadcast when a user connects
-//       socket.emit("message", formatMessage(bot, "Welcome to chadbox!")); //it will emit/tell to only connected client
-  
-//       socket.broadcast
-//         .to(user.room)
-//         .emit("message", formatMessage(bot, `${user.username} is connected!`)); //it will emit(tell) to everyone except himself
-  
-//       //send users to room info
-//       io.to(user.room).emit("roomUsers", {
-//         room: user.room,
-//         users: getRoomUsers(user.room),
-//       });
-//     });
-  
-//     //Listen to chatmessage
-//     socket.on("chatMessage", (msg) => {
-//       const user = getCurrentUser(socket.id);
-//       io.to(user.room).emit("message", formatMessage(user.username, msg));
-//     });
-  
-//     //Runs when client disconnects
-//     socket.on("disconnect", () => {
-//       const user = userLeave(socket.id);
-  
-//       if (user) {
-//         io.to(user.room).emit(
-//           "message",
-//           formatMessage(bot, `${user.username} has left the chat`)
-//         );
-  
-//         //send users to room info
-//         io.to(user.room).emit("roomUsers", {
-//           room: user.room,
-//           users: getRoomUsers(user.room),
-//         });
-//       }
-//     });
-  
-//     //io.emit() it will emit to everybody
-//   });
-
-
-  
-// const PORT = 3000 || process.env.PORT;
-
-// server.listen(PORT, () => console.log(`server started ${PORT}`));
-
-
-
-
-
-// })
-
-
-
-
-
-
-
 
 
 
