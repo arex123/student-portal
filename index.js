@@ -88,7 +88,7 @@ function msg(req){
 
 
     console.log("token=",req.token);
-    var em= "<h3>Dear "+ req.body.name+", welcome to saitm <a href='https://studentportal0.herokuapp.com/verify_account?verification_key="+req.token+"'>Verify your account</a>!</h3><br />May the delivery force be with you!";
+    var em= "<h3>Dear "+ req.body.name+", welcome to saitm <a href='https://studentportal-saitm.herokuapp.com/verify_account?verification_key="+req.token+"'>Verify your account</a>!</h3><br />May the delivery force be with you!";
         
     const request = mailjet
     .post("send", {'version': 'v3.1'})
@@ -419,7 +419,7 @@ app.post("/forgetpsd",function(req,res){  //from forgetpsd page
     
 function msg(req){
 
-    var em= "<h3>Dear user, You forget the password right?? if yes <a href='https://studentportal0.herokuapp.com/change_password?verification_key="+req.token+"'>Verify your account click on link</a>!</h3><br />May the delivery force be with you!";
+    var em= "<h3>Dear user, You forget the password right?? if yes <a href='https://studentportal-saitm.herokuapp.com/change_password?verification_key="+req.token+"'>Verify your account click on link</a>!</h3><br />May the delivery force be with you!";
         
     const request = mailjet
     .post("send", {'version': 'v3.1'})
@@ -565,6 +565,45 @@ app.get('/pracdata',(req,res)=>{
 
 })
 
+app.get('/clsub',(req,res)=>{
+
+    db.collection('details').findOne({ email: req.session.email }, function(err, user){
+        if(err){
+            console.log(err);
+        }else{
+            
+            //json file reading
+            let sem = user.Sem;
+            let Branch = user.Branch;
+            let course = user.Course;
+            let buffer = fs.readFileSync("./data.json");
+            let practdata = JSON.parse(buffer);
+            // console.log("daa",data[course][Branch][sem].subjects);
+            let pobj = practdata[course][Branch][sem].theory;
+            // console.log(obj.length);
+            // res.render('classroom.ejs',{ user,obj});
+            console.log(pobj);
+            res.send(JSON.stringify(pobj));
+            
+         }
+
+    });
+
+})
+
+app.get('/material',checkSession,(req,res)=>{
+    db.collection('details').findOne({ email: req.session.email }, function(err, user){
+        if(err){
+            console.log(err);
+        }else{
+            
+            
+            res.render('subjects',{user});
+            
+         }
+
+    });
+})
 
 
 

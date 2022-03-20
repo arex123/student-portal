@@ -1,426 +1,680 @@
 {
-    "Btech": {
-      "cse": {
-        "1": {
-          "English": {
-            "syllabus": "eng syllabus link",
-            "notes": {
-              "unit 1": " english notes unit 1 link",
-              "unit 2": " english notes unit 2 link",
-              "unit 3": " english notes unit 3 link",
-              "unit 4": " english notes unit 4 link"
-            },
-            "QP": "QP links"
-          },
-          "Semiconductor Physics": {
-            "syllabus": "eng syllabus link ",
-            "notes": {
-              "unit 1": " english notes unit 1 link",
-              "unit 2": " english notes unit 2 link",
-              "unit 3": " english notes unit 3 link",
-              "unit 4": " english notes unit 4 link"
-            },
-            "QP": "QP links"
-          },
-          "M1": {
-            "syllabus": "eng syllabus link ",
-            "notes": {
-              "unit 1": " english notes unit 1 link",
-              "unit 2": " english notes unit 2 link",
-              "unit 3": " english notes unit 3 link",
-              "unit 4": " english notes unit 4 link"
-            },
-            "QP": "QP links"
-          },
-          "BEE": {
-            "syllabus": "eng syllabus link ",
-            "notes": {
-              "unit 1": " english notes unit 1 link",
-              "unit 2": " english notes unit 2 link",
-              "unit 3": " english notes unit 3 link",
-              "unit 4": " english notes unit 4 link"
-            },
-            "QP": "QP links"
-          }
-        },
-        "2": {
-          "Chemistry": {
-            "syllabus": "eng syllabus link ",
-            "notes": {
-              "unit 1": " english notes unit 1 link",
-              "unit 2": " english notes unit 2 link",
-              "unit 3": " english notes unit 3 link",
-              "unit 4": " english notes unit 4 link"
-            },
-            "QP": "QP links"
-          },
-          "M2": {
-            "syllabus": "eng syllabus link ",
-            "notes": {
-              "unit 1": " english notes unit 1 link",
-              "unit 2": " english notes unit 2 link",
-              "unit 3": " english notes unit 3 link",
-              "unit 4": " english notes unit 4 link"
-            },
-            "QP": "QP links"
-          },
-          "PPS": {
-            "syllabus": "eng syllabus link ",
-            "notes": {
-              "unit 1": " english notes unit 1 link",
-              "unit 2": " english notes unit 2 link",
-              "unit 3": " english notes unit 3 link",
-              "unit 4": " english notes unit 4 link"
-            },
-            "QP": "QP links"
-          },
-          "WT": {
-            "syllabus": "eng syllabus link ",
-            "notes": {
-              "unit 1": " english notes unit 1 link",
-              "unit 2": " english notes unit 2 link",
-              "unit 3": " english notes unit 3 link",
-              "unit 4": " english notes unit 4 link"
-            },
-            "QP": "QP links"
-          }
-        },
-        "3": {
-          "theory": {
-            "DBMS": {
-              "syllabus": "eng syllabus link ",
-              "notes": {
-                "unit 1": " english notes unit 1 link",
-                "unit 2": " english notes unit 2 link",
-                "unit 3": " english notes unit 3 link",
-                "unit 4": " english notes unit 4 link"
-              },
-              "QP": "QP links"
-            },
-            "DSA": {
-              "syllabus": "eng syllabus link ",
-              "notes": {
-                "unit 1": " english notes unit 1 link",
-                "unit 2": " english notes unit 2 link",
-                "unit 3": " english notes unit 3 link",
-                "unit 4": " english notes unit 4 link"
-              },
-              "QP": "QP links"
-            },
-            "DE": {
-              "syllabus": "eng syllabus link ",
-              "notes": {
-                "unit 1": " english notes unit 1 link",
-                "unit 2": " english notes unit 2 link",
-                "unit 3": " english notes unit 3 link",
-                "unit 4": " english notes unit 4 link"
-              },
-              "QP": "QP links"
-            },
-            "Python": {
-              "syllabus": "eng syllabus link ",
-              "notes": {
-                "unit 1": " english notes unit 1 link",
-                "unit 2": " english notes unit 2 link",
-                "unit 3": " english notes unit 3 link",
-                "unit 4": " english notes unit 4 link"
-              },
-              "QP": "QP links"
-            },
-            "M3": {
-              "syllabus": "eng syllabus link ",
-              "notes": {
-                "unit 1": " english notes unit 1 link",
-                "unit 2": " english notes unit 2 link",
-                "unit 3": " english notes unit 3 link",
-                "unit 4": " english notes unit 4 link"
-              },
-              "QP": "QP links"
-            },
-            "Economics": {
-              "syllabus": "eng syllabus link ",
-              "notes": {
-                "unit 1": " english notes unit 1 link",
-                "unit 2": " english notes unit 2 link",
-                "unit 3": " english notes unit 3 link",
-                "unit 4": " english notes unit 4 link"
-              },
-              "QP": "QP links"
-            }
-          },
-          "practicals": {
-            "DBMS LAB": {
-              "syllabus": "eng syllabus link ",
-              "notes": {
-                "unit 1": " english notes unit 1 link",
-                "unit 2": " english notes unit 2 link",
-                "unit 3": " english notes unit 3 link",
-                "unit 4": " english notes unit 4 link"
-              },
-              "QP": "QP links"
-            },
-            "DE LAB": {
-              "syllabus": "eng syllabus link ",
-              "notes": {
-                "unit 1": " english notes unit 1 link",
-                "unit 2": " english notes unit 2 link",
-                "unit 3": " english notes unit 3 link",
-                "unit 4": " english notes unit 4 link"
-              },
-              "QP": "QP links"
-            },
-            "DSA LAB": {
-              "syllabus": "eng syllabus link ",
-              "notes": {
-                "unit 1": " english notes unit 1 link",
-                "unit 2": " english notes unit 2 link",
-                "unit 3": " english notes unit 3 link",
-                "unit 4": " english notes unit 4 link"
-              },
-              "QP": "QP links"
-            },
-            "PYTHON LAB": {
-              "syllabus": "eng syllabus link ",
-              "notes": {
-                "unit 1": " english notes unit 1 link",
-                "unit 2": " english notes unit 2 link",
-                "unit 3": " english notes unit 3 link",
-                "unit 4": " english notes unit 4 link"
-              },
-              "QP": "QP links"
-            }
-          }
-        },
-        "4": {
-          "subjects": {
-            "Discrete Mathematics": {
-              "syllabus": "eng syllabus link ",
-              "notes": {
-                "unit 1": " english notes unit 1 link",
-                "unit 2": " english notes unit 2 link",
-                "unit 3": " english notes unit 3 link",
-                "unit 4": " english notes unit 4 link"
-              },
-              "QP": "QP links"
-            },
-            "COA": {
-              "syllabus": "eng syllabus link ",
-              "notes": {
-                "unit 1": " english notes unit 1 link",
-                "unit 2": " english notes unit 2 link",
-                "unit 3": " english notes unit 3 link",
-                "unit 4": " english notes unit 4 link"
-              },
-              "QP": "QP links"
-            },
-            "OS": {
-              "syllabus": "eng syllabus link ",
-              "notes": {
-                "unit 1": " english notes unit 1 link",
-                "unit 2": " english notes unit 2 link",
-                "unit 3": " english notes unit 3 link",
-                "unit 4": " english notes unit 4 link"
-              },
-              "QP": "QP links"
-            },
-            "OOPS": {
-              "syllabus": "eng syllabus link ",
-              "notes": {
-                "unit 1": " english notes unit 1 link",
-                "unit 2": " english notes unit 2 link",
-                "unit 3": " english notes unit 3 link",
-                "unit 4": " english notes unit 4 link"
-              },
-              "QP": "QP links"
-            },
-            "Web Technologies": {
-              "syllabus": "eng syllabus link ",
-              "notes": {
-                "unit 1": " english notes unit 1 link",
-                "unit 2": " english notes unit 2 link",
-                "unit 3": " english notes unit 3 link",
-                "unit 4": " english notes unit 4 link"
-              },
-              "QP": "QP links"
-            },
-            "Environmental Science": {
-              "syllabus": "eng syllabus link ",
-              "notes": {
-                "unit 1": " english notes unit 1 link",
-                "unit 2": " english notes unit 2 link",
-                "unit 3": " english notes unit 3 link",
-                "unit 4": " english notes unit 4 link"
-              },
-              "QP": "QP links"
-            }
-          },
-          "practicals": {
-            "os lab": {
-              "syllabus": "eng syllabus link ",
-              "notes": {
-                "unit 1": " english notes unit 1 link",
-                "unit 2": " english notes unit 2 link",
-                "unit 3": " english notes unit 3 link",
-                "unit 4": " english notes unit 4 link"
-              },
-              "QP": "QP links"
-            },
-            "oops lab": {
-              "syllabus": "eng syllabus link ",
-              "notes": {
-                "unit 1": " english notes unit 1 link",
-                "unit 2": " english notes unit 2 link",
-                "unit 3": " english notes unit 3 link",
-                "unit 4": " english notes unit 4 link"
-              },
-              "QP": "QP links"
-            },
-            "wt lab": {
-              "syllabus": "eng syllabus link ",
-              "notes": {
-                "unit 1": " english notes unit 1 link",
-                "unit 2": " english notes unit 2 link",
-                "unit 3": " english notes unit 3 link",
-                "unit 4": " english notes unit 4 link"
-              },
-              "QP": "QP links"
-            }
-          }
-        },
-        "5": {
-          "subjects": {
-            "computer networks": {
-              "notes":"notes link nn"
-            },
-            "DAA": {
-              "notes":"notes link nn"
-            },
-            "programming in java": {
-              "notes":"notes link nn"
-            },
-            "Web Technologies": {
-              "notes":"notes link nn"
-            },
-            "Signals and systems": {
-              "notes":"notes link nn"
-            }
-          },
-          "practical": {
-            "CN labs": {
-              "notes":"notes link nn"
-            },
-            "DAA Lab": {
-              "notes":"notes link nn"
-            },
-            "programming in java labs": {
-              "notes":"notes link nn"
-            },
-            "wt lab": {
-              "notes":"notes link nn"
-            }
-          }
-        },
-        "6": {
-          "theory": {
-            "AI": {},
-            "MWC": {},
-            "Advanced java": {},
-            "Constitution of india": {},
-            "Cloud computing": {}
-          },
-          "practicals": {
-            "AI Labs": {},
-            "Advanced java labs": {}
-          }
-        },
-        "7": {
-            "subjects":{
+  "Btech": {
+    "cse": {
+      "1": {
+          "subjects":{
 
-                "Neural Network" : { 
-                  "notes":"notes link nn"
-                }
-            ,"Web Mining" : { 
-              "notes":"anchor tag"
-            }
-            ,"Network security and cryptography" : { 
-              "notes":"anchor tag"
-            }
-            ,"English for Professionals" : { 
-              "notes":"anchor tag"            }
+          "English" : { 
+                "notes":"anchor tag"
+
             },
-            "practical":{
-              "NN labs":{
-                "notes":"link" 
-              }
-            },
-            "content":["syllabus","notes","QP" ],
-            "notes":["unit 1","unit 2","unit 3","unit 4"],
-            "theory": {
-                "NN": {
-                    "syllabus": "eng syllabus link ",
-                    "notes": {
-                    "unit 1": " english notes unit 1 link",
-                    "unit 2": " english notes unit 2 link",
-                    "unit 3": " english notes unit 3 link",
-                    "unit 4": " english notes unit 4 link"
-                    },
-                    "QP": "QP links"
-                },
-                "Web mining": {
-                    "syllabus": "eng syllabus link ",
-                    "notes": {
-                    "unit 1": " english notes unit 1 link",
-                    "unit 2": " english notes unit 2 link",
-                    "unit 3": " english notes unit 3 link",
-                    "unit 4": " english notes unit 4 link"
-                    },
-                    "QP": "QP links"
-                },
-                "Network Security and cryptography": {
-                    "syllabus": "eng syllabus link ",
-                    "notes": {
-                    "unit 1": " english notes unit 1 link",
-                    "unit 2": " english notes unit 2 link",
-                    "unit 3": " english notes unit 3 link",
-                    "unit 4": " english notes unit 4 link"
-                    },
-                    "QP": "QP links"
-                },
-                "English for Professionals": {
-                    "syllabus": "eng syllabus link ",
-                    "notes": {
-                    "unit 1": " english notes unit 1 link",
-                    "unit 2": " english notes unit 2 link",
-                    "unit 3": " english notes unit 3 link",
-                    "unit 4": " english notes unit 4 link"
-                    },
-                    "QP": "QP links"
-                }
-            },
-            "practicals": {
-                "Neural Network labs": {
-                    "syllabus": "eng syllabus link ",
-                    "notes": {
-                    "unit 1": " english notes unit 1 link",
-                    "unit 2": " english notes unit 2 link",
-                    "unit 3": " english notes unit 3 link",
-                    "unit 4": " english notes unit 4 link"
-                    },
-                    "QP": "QP links"
-                }
+          "Physics" : { 
+            "notes":"anchor tag"
+
+          },
+          "M1" : { 
+            "notes":"anchor tag"
+
+          },
+          "BEE" : { 
+            "link1":"anchor tag"
+
           }
-        },
-        "8": {
+          },
+          "practical":["Physics labs","BEE labs"],
+          "content":["syllabus","notes","QP" ],
+          "notes":["unit 1","unit 2","unit 3","unit 4"],
           "theory": {
-            "Machine Learning": {},
-            "Big Data Analytics": {},
-            "Open Elective-||": {}
+              "English": {
+                  "syllabus": "english syllabus link ",
+                  "notes": {
+                  "unit 1": " english notes unit 1 link",
+                  "unit 2": " english notes unit 2 link",
+                  "unit 3": " english notes unit 3 link",
+                  "unit 4": " english notes unit 4 link"
+                  },
+                  "QP": "QP links"
+              },
+              "Physics": {
+                  "syllabus": "Physics syllabus link ",
+                  "notes": {
+                  "unit 1": " Physics notes unit 1 link",
+                  "unit 2": " Physics notes unit 2 link",
+                  "unit 3": " Physics notes unit 3 link",
+                  "unit 4": " Physics notes unit 4 link"
+                  },
+                  "QP": "QP links"
+              },
+              "M1": {
+                  "syllabus": "M1 syllabus link ",
+                  "notes": {
+                  "unit 1": " M1 notes unit 1 link",
+                  "unit 2": " M1 notes unit 2 link",
+                  "unit 3": " M1 notes unit 3 link",
+                  "unit 4": " M1 notes unit 4 link"
+                  },
+                  "QP": "QP links"
+              },
+              "BEE": {
+                  "syllabus": "BEE syllabus link ",
+                  "notes": {
+                  "unit 1": " BEE notes unit 1 link",
+                  "unit 2": " BEE notes unit 2 link",
+                  "unit 3": " BEE notes unit 3 link",
+                  "unit 4": " BEE notes unit 4 link"
+                  },
+                  "QP": "QP links"
+              }
           },
           "practicals": {
-            "Machine Learning with python Lab": {},
-            "Big Data Analytics Lab": {}
-          }
+              "Physics labs": {
+                  "syllabus": "Physics syllabus link "
+              },
+              "BEE labs": {
+                  "syllabus": "BEE syllabus link "
+              }
         }
+      },
+      "2": {
+          "subjects":{
+
+          "Chemistry" : { 
+                "notes":"anchor tag"
+
+              }
+          ,"M2" : { 
+            "notes":"anchor tag"
+
+          }
+          ,"PPS" : { 
+            "notes":"anchor tag"
+
+          }
+          ,"Workshop Technology" : { 
+            "link1":"anchor tag"
+
+          }
+          },
+          "practical":["Chemistry labs","PPS labs","Workshop Technology"],
+          "content":["syllabus","notes","QP" ],
+          "notes":["unit 1","unit 2","unit 3","unit 4"],
+          "theory": {
+              "Chemistry": {
+                  "syllabus": "Chemistry syllabus link ",
+                  "notes": {
+                  "unit 1": " Chemistry notes unit 1 link",
+                  "unit 2": " Chemistry notes unit 2 link",
+                  "unit 3": " Chemistry notes unit 3 link",
+                  "unit 4": " Chemistry notes unit 4 link"
+                  },
+                  "QP": "QP links"
+              },
+              "M2": {
+                  "syllabus": "M2 syllabus link ",
+                  "notes": {
+                  "unit 1": " M2 notes unit 1 link",
+                  "unit 2": " M2 notes unit 2 link",
+                  "unit 3": " M2 notes unit 3 link",
+                  "unit 4": " M2 notes unit 4 link"
+                  },
+                  "QP": "QP links"
+              },
+              "PPS": {
+                  "syllabus": "PPS syllabus link ",
+                  "notes": {
+                  "unit 1": " PPS notes unit 1 link",
+                  "unit 2": " PPS notes unit 2 link",
+                  "unit 3": " PPS notes unit 3 link",
+                  "unit 4": " PPS notes unit 4 link"
+                  },
+                  "QP": "QP links"
+              },
+              "Workshop Technology": {
+                  "syllabus": "Workshop Technology syllabus link ",
+                  "notes": {
+                  "unit 1": " Workshop Technology notes unit 1 link",
+                  "unit 2": " Workshop Technology notes unit 2 link",
+                  "unit 3": " Workshop Technology notes unit 3 link",
+                  "unit 4": " Workshop Technology notes unit 4 link"
+                  },
+                  "QP": "QP links"
+              }
+          },
+          "practicals": {
+              "Chemistry labs": {
+                  "syllabus": "Chemistry syllabus link "
+              },
+              "PPS labs": {
+                  "syllabus": "PPS syllabus link "
+              },
+              "Workshop Technology labs": {
+                  "syllabus": "Workshop Technology syllabus link "
+              }
+        }
+      },
+      "3": {
+          "subjects":{
+
+              "DBMS" : { 
+                "notes":"anchor tag"
+
+              }
+          ,"DSA" : { 
+            "notes":"anchor tag"
+
+          }
+          ,"Python" : { 
+            "notes":"anchor tag"
+
+          }
+          ,"Economics" : { 
+            "link1":"anchor tag"
+
+          }
+          },
+          "practical":["DBMS labs","DSA labs","Python labs"],
+          "content":["syllabus","notes","QP" ],
+          "notes":["unit 1","unit 2","unit 3","unit 4"],
+          "theory": {
+              "DBMS": {
+                  "syllabus": "DBMS syllabus link ",
+                  "notes": {
+                  "unit 1": " DBMS notes unit 1 link",
+                  "unit 2": " DBMS notes unit 2 link",
+                  "unit 3": " DBMS notes unit 3 link",
+                  "unit 4": " DBMS notes unit 4 link"
+                  },
+                  "QP": "QP links"
+              },
+              "DSA": {
+                  "syllabus": "DSA syllabus link ",
+                  "notes": {
+                  "unit 1": " DSA notes unit 1 link",
+                  "unit 2": " DSA notes unit 2 link",
+                  "unit 3": " DSA notes unit 3 link",
+                  "unit 4": " DSA notes unit 4 link"
+                  },
+                  "QP": "QP links"
+              },
+              "Python": {
+                  "syllabus": "Python syllabus link ",
+                  "notes": {
+                  "unit 1": " Python notes unit 1 link",
+                  "unit 2": " Python notes unit 2 link",
+                  "unit 3": " Python notes unit 3 link",
+                  "unit 4": " Python notes unit 4 link"
+                  },
+                  "QP": "QP links"
+              },
+              "M3": {
+                  "syllabus": "M3 syllabus link ",
+                  "notes": {
+                  "unit 1": " M3 notes unit 1 link",
+                  "unit 2": " M3 notes unit 2 link",
+                  "unit 3": " M3 notes unit 3 link",
+                  "unit 4": " M3 notes unit 4 link"
+                  },
+                  "QP": "QP links"
+              },
+              "Economics": {
+                  "syllabus": "Economics syllabus link ",
+                  "notes": {
+                  "unit 1": " Economics notes unit 1 link",
+                  "unit 2": " Economics notes unit 2 link",
+                  "unit 3": " Economics notes unit 3 link",
+                  "unit 4": " Economics notes unit 4 link"
+                  },
+                  "QP": "QP links"
+              }
+          },
+          "practicals": {
+              "DBMS labs": {
+                  "syllabus": "DBMS syllabus link "
+              },
+              "DSA labs": {
+                  "syllabus": "DSA syllabus link "
+              },
+              "Python labs": {
+                  "syllabus": "Python syllabus link "
+              }
+        }
+      },
+      "4": {
+          "subjects":{
+          "Discreate Mathematics" : { 
+                "notes":"anchor tag"
+
+              }
+          ,"COA" : { 
+            "notes":"anchor tag"
+
+          }
+          ,"Organizational Behaviour" : { 
+            "notes":"anchor tag"
+
+          }
+          ,"Web Technology" : { 
+            "notes":"anchor tag"
+
+          }
+          ,"Operating System" : { 
+            "notes":"anchor tag"
+
+          }
+          ,"OOPS" : { 
+            "link1":"anchor tag"
+
+          }
+          },
+          "practical":["Operating System labs","Web Technology labs","OOPS labs"],
+          "content":["syllabus","notes","QP" ],
+          "notes":["unit 1","unit 2","unit 3","unit 4"],
+          "theory": {
+              "Discreate Mathematics": {
+                  "syllabus": "Discreate Mathematics syllabus link ",
+                  "notes": {
+                  "unit 1": " Discreate Mathematics notes unit 1 link",
+                  "unit 2": " Discreate Mathematics notes unit 2 link",
+                  "unit 3": " Discreate Mathematics notes unit 3 link",
+                  "unit 4": " Discreate Mathematics notes unit 4 link"
+                  },
+                  "QP": "QP links"
+              },
+              "COA": {
+                  "syllabus": "COA syllabus link ",
+                  "notes": {
+                  "unit 1": " COA notes unit 1 link",
+                  "unit 2": " COA notes unit 2 link",
+                  "unit 3": " COA notes unit 3 link",
+                  "unit 4": " COA notes unit 4 link"
+                  },
+                  "QP": "QP links"
+              },
+              "Operating System": {
+                  "syllabus": "Operating System syllabus link ",
+                  "notes": {
+                  "unit 1": " Operating System notes unit 1 link",
+                  "unit 2": " Operating System notes unit 2 link",
+                  "unit 3": " Operating System notes unit 3 link",
+                  "unit 4": " Operating System notes unit 4 link"
+                  },
+                  "QP": "QP links"
+              },
+              "Organizational Behaviour": {
+                  "syllabus": "Organizational Behaviour syllabus link ",
+                  "notes": {
+                  "unit 1": " Organizational Behaviour notes unit 1 link",
+                  "unit 2": " Organizational Behaviour notes unit 2 link",
+                  "unit 3": " Organizational Behaviour notes unit 3 link",
+                  "unit 4": " Organizational Behaviour notes unit 4 link"
+                  },
+                  "QP": "QP links"
+              },
+              "Web Technology": {
+                  "syllabus": "Web Technology syllabus link ",
+                  "notes": {
+                  "unit 1": " Web Technology notes unit 1 link",
+                  "unit 2": " Web Technology notes unit 2 link",
+                  "unit 3": " Web Technology notes unit 3 link",
+                  "unit 4": " Web Technology notes unit 4 link"
+                  },
+                  "QP": "QP links"
+              },
+              "OOPS": {
+                  "syllabus": "OOPS syllabus link ",
+                  "notes": {
+                  "unit 1": " OOPS notes unit 1 link",
+                  "unit 2": " OOPS notes unit 2 link",
+                  "unit 3": " OOPS notes unit 3 link",
+                  "unit 4": " OOPS notes unit 4 link"
+                  },
+                  "QP": "QP links"
+              }
+          },
+          "practicals": {
+              "Operating System labs": {
+                  "syllabus": "Operating System syllabus link "
+              },
+              "Web Technology labs": {
+                  "syllabus": "Web Technology syllabus link "
+              },
+              "OOPS labs": {
+                  "syllabus": "OOPS syllabus link "
+              }
+        }
+      },
+      "5": {
+          "subjects":{
+
+          "Computer Network" : { 
+                "notes":"anchor tag"
+              }
+          ,"Microprocessor" : { 
+            "notes":"anchor tag"
+          }
+          ,"Foraml Language and Automata" : { 
+            "notes":"anchor tag"
+          }
+          ,"JAVA" : { 
+            "notes":"anchor tag"
+          }
+          ,"Software Engineering" : { 
+            "notes":"anchor tag"
+          }
+          ,"DAA" : { 
+            "link1":"anchor tag"
+
+          }
+          },
+          "practical":["Computer Network labs","Microprocessor labs","JAVA labs","DAA labs"],
+          "content":["syllabus","notes","QP" ],
+          "notes":["unit 1","unit 2","unit 3","unit 4"],
+          "theory": {
+              "Computer Network": {
+                  "syllabus": "Computer Network syllabus link ",
+                  "notes": {
+                  "unit 1": " Computer Network notes unit 1 link",
+                  "unit 2": " Computer Network notes unit 2 link",
+                  "unit 3": " Computer Network notes unit 3 link",
+                  "unit 4": " Computer Network notes unit 4 link"
+                  },
+                  "QP": "QP links"
+              },
+              "Microprocessor": {
+                  "syllabus": "Microprocessor syllabus link ",
+                  "notes": {
+                  "unit 1": " Microprocessor notes unit 1 link",
+                  "unit 2": " Microprocessor notes unit 2 link",
+                  "unit 3": " Microprocessor notes unit 3 link",
+                  "unit 4": " Microprocessor notes unit 4 link"
+                  },
+                  "QP": "QP links"
+              },
+              "Foraml Language and Automata": {
+                  "syllabus": "Foraml Language and Automata syllabus link ",
+                  "notes": {
+                  "unit 1": " Foraml Language and Automata notes unit 1 link",
+                  "unit 2": " Foraml Language and Automata notes unit 2 link",
+                  "unit 3": " Foraml Language and Automata notes unit 3 link",
+                  "unit 4": " Foraml Language and Automata notes unit 4 link"
+                  },
+                  "QP": "QP links"
+              },
+              "JAVA": {
+                  "syllabus": "JAVA syllabus link ",
+                  "notes": {
+                  "unit 1": " JAVA notes unit 1 link",
+                  "unit 2": " JAVA notes unit 2 link",
+                  "unit 3": " JAVA notes unit 3 link",
+                  "unit 4": " JAVA notes unit 4 link"
+                  },
+                  "QP": "QP links"
+              },
+              "Software Engineering": {
+                  "syllabus": "Software Engineering syllabus link ",
+                  "notes": {
+                  "unit 1": " Software Engineering notes unit 1 link",
+                  "unit 2": " Software Engineering notes unit 2 link",
+                  "unit 3": " Software Engineering notes unit 3 link",
+                  "unit 4": " Software Engineering notes unit 4 link"
+                  },
+                  "QP": "QP links"
+              },
+              "DAA": {
+                  "syllabus": "DAA syllabus link ",
+                  "notes": {
+                  "unit 1": " DAA notes unit 1 link",
+                  "unit 2": " DAA notes unit 2 link",
+                  "unit 3": " DAA notes unit 3 link",
+                  "unit 4": " DAA notes unit 4 link"
+                  },
+                  "QP": "QP links"
+              }
+          },
+          "practicals": {
+              "Computer Network labs": {
+                  "syllabus": "Computer Network syllabus link "
+              },
+              "Microprocessor labs": {
+                  "syllabus": "Microprocessor syllabus link "
+              },
+              "DAA labs": {
+                  "syllabus": "DAA syllabus link "
+              },
+              "JAVA labs": {
+                  "syllabus": "JAVA syllabus link "
+              }
+        }
+      },
+      "6": {
+          "subjects":{
+
+          "Compiler Design" : { 
+                "notes":"anchor tag"
+              }
+          ,"Artificial Intelligence" : { 
+            "notes":"anchor tag"
+          }
+          ,"Advance Java" : { 
+            "notes":"anchor tag"
+          }
+          ,"Mobile and Wireless Communication" : { 
+            "link1":"anchor tag"
+          }
+          ,"Constitution Of India" : { 
+            "notes":"anchor tag"
+          }
+          ,"ADBMS" : { 
+            "notes":"anchor tag"
+          }
+          },
+          "practical":["Compiler Design labs","Artificial Intelligence labs","Advance Java labs"],
+          "content":["syllabus","notes","QP" ],
+          "notes":["unit 1","unit 2","unit 3","unit 4"],
+          "theory": {
+              "Compiler Design": {
+                  "syllabus": "Compiler Design syllabus link ",
+                  "notes": {
+                  "unit 1": " Compiler Design notes unit 1 link",
+                  "unit 2": " Compiler Design notes unit 2 link",
+                  "unit 3": " Compiler Design notes unit 3 link",
+                  "unit 4": " Compiler Design notes unit 4 link"
+                  },
+                  "QP": "QP links"
+              },
+              "Artificial Intelligence": {
+                  "syllabus": "Artificial Intelligence syllabus link ",
+                  "notes": {
+                  "unit 1": " Artificial Intelligence notes unit 1 link",
+                  "unit 2": " Artificial Intelligence notes unit 2 link",
+                  "unit 3": " Artificial Intelligence notes unit 3 link",
+                  "unit 4": " Artificial Intelligence notes unit 4 link"
+                  },
+                  "QP": "QP links"
+              },
+              "Advance Java": {
+                  "syllabus": "Advance Java syllabus link ",
+                  "notes": {
+                  "unit 1": " Advance Java notes unit 1 link",
+                  "unit 2": " Advance Java notes unit 2 link",
+                  "unit 3": " Advance Java notes unit 3 link",
+                  "unit 4": " Advance Java notes unit 4 link"
+                  },
+                  "QP": "QP links"
+              },
+              "Mobile and Wireless Communication": {
+                  "syllabus": "Mobile and Wireless Communication syllabus link ",
+                  "notes": {
+                  "unit 1": " Mobile and Wireless Communication notes unit 1 link",
+                  "unit 2": " Mobile and Wireless Communication notes unit 2 link",
+                  "unit 3": " Mobile and Wireless Communication notes unit 3 link",
+                  "unit 4": " Mobile and Wireless Communication notes unit 4 link"
+                  },
+                  "QP": "QP links"
+              },
+              "ADBMS": {
+                  "syllabus": "ADBMS syllabus link ",
+                  "notes": {
+                  "unit 1": " ADBMS notes unit 1 link",
+                  "unit 2": " ADBMS notes unit 2 link",
+                  "unit 3": " ADBMS notes unit 3 link",
+                  "unit 4": " ADBMS Java notes unit 4 link"
+                  },
+                  "QP": "QP links"
+              },
+              "Constitution Of India": {
+                  "syllabus": "Constitution Of India syllabus link ",
+                  "notes": {
+                  "unit 1": " Constitution Of India notes unit 1 link",
+                  "unit 2": " Constitution Of India notes unit 2 link",
+                  "unit 3": " Constitution Of India notes unit 3 link",
+                  "unit 4": " Constitution Of India notes unit 4 link"
+                  },
+                  "QP": "QP links"
+              }
+          },
+          "practicals": {
+              "Compiler Design labs": {
+                  "syllabus": "Compiler Design syllabus link "
+              },
+              "Artificial Intelligence labs": {
+                  "syllabus": "Artificial Intelligence syllabus link "
+              },
+              "Advance Java labs": {
+                  "syllabus": "Compiler Design syllabus link "
+              }
+        }
+      },
+      "7": {
+          "subjects":{
+
+          "Neural Network" : { 
+                "notes":"material"
+              }
+          ,"Web Mining" : { 
+            "notes":"Btech/cse/7/"
+          }
+          ,"Network security and cryptography" : { 
+            "notes":"Btech/cse/7/"
+          }
+          ,"English for Professionals" : { 
+            "link1":"Btech/cse/7/"
+          }
+          },
+          "practical":["Neural Network labs"],
+          "content":["syllabus","notes","QP" ],
+          "notes":["unit 1","unit 2","unit 3","unit 4"],
+          "theory": {
+              "Neural Network": {
+                  "syllabus": "https://drive.google.com/file/d/1fPjL4Bm7Xg1s_tYY3FMSN7OeMcNCtIb8/view?usp=sharing",
+                  "notes": {
+                  "unit 1": ["https://drive.google.com/file/d/1lPWSziVwHfsgXSv-Id8L0Vg2EYHMEb58/view?usp=sharing",
+                  "https://drive.google.com/file/d/1lE96tedhkuwtBT0roX2awfyGriNRBECc/view?usp=sharing"],
+                  "unit 2": ["https://drive.google.com/file/d/1lE96tedhkuwtBT0roX2awfyGriNRBECc/view?usp=sharing"],
+                  "unit 3": ["https://drive.google.com/file/d/1L7reXH1XcRsY1HID91ZdeSOROWwZlXPy/view?usp=sharing"],
+                  "unit 4": ["https://drive.google.com/file/d/1X6RGwGMHf8JeJLDnxCIe6SFURMmWK7Vp/view?usp=sharing"]
+                  },
+                  "QP": ["https://drive.google.com/file/d/12cAy9uMoS2bNL5YtjtzOeJj2B99Gqqqn/view?usp=sharing",
+                  "https://drive.google.com/file/d/14yAftHPevJxv4XD5snpW8_sH4k8Cwyp5/view?usp=sharing",
+                "https://drive.google.com/file/d/1klWSG-7tOqmNiXBqjnVid6FTCpWgeH-y/view?usp=sharing"]
+              },
+              "Web mining": {
+                  "syllabus": "Web mining syllabus link ",
+                  "notes": {
+                  "unit 1": " Web mining notes unit 1 link",
+                  "unit 2": " Web mining notes unit 2 link",
+                  "unit 3": " Web mining notes unit 3 link",
+                  "unit 4": " Web mining notes unit 4 link"
+                  },
+                  "QP": "QP links"
+              },
+              "Network Security and cryptography": {
+                  "syllabus": "Network Security and cryptography syllabus link ",
+                  "notes": {
+                  "unit 1": " Network Security and cryptography notes unit 1 link",
+                  "unit 2": " Network Security and cryptography notes unit 2 link",
+                  "unit 3": " Network Security and cryptography notes unit 3 link",
+                  "unit 4": " Network Security and cryptography notes unit 4 link"
+                  },
+                  "QP": "QP links"
+              },
+              "English for Professionals": {
+                  "syllabus": "English for Professionals syllabus link ",
+                  "notes": {
+                  "unit 1": " English for Professionals notes unit 1 link",
+                  "unit 2": " English for Professionals notes unit 2 link",
+                  "unit 3": " English for Professionals notes unit 3 link",
+                  "unit 4": " English for Professionals notes unit 4 link"
+                  },
+                  "QP": "QP links"
+              }
+          },
+          "practicals": {
+              "Neural Network labs": {
+                  "file": "https://drive.google.com/file/d/1Igwp7yqCaJZVP8gDhfpmL9SawBxURrCM/view?usp=sharing"
+              }
+        }
+      },
+      "8": {
+          "subjects":{
+
+          "Machine Learning" : { 
+                "notes":"anchor tag"
+              }
+          ,"Big Data Analytics" : { 
+            "notes":"anchor tag"
+          }
+          ,"Open Elective-||" : { 
+            "notes":"anchor tag"
+          }
+          ,"English for Professionals" : { 
+            "link1":"anchor tag"
+          }
+          },
+          "practical":["Machine Learning labs"],
+          "content":["syllabus","notes","QP" ],
+          "notes":["unit 1","unit 2","unit 3","unit 4"],
+          "theory": {
+              "Machine Learning": {
+                  "syllabus": "Machine Learning syllabus link ",
+                  "notes": {
+                  "unit 1": " Machine Learning notes unit 1 link",
+                  "unit 2": " Machine Learning notes unit 2 link",
+                  "unit 3": " Machine Learning notes unit 3 link",
+                  "unit 4": " Machine Learning notes unit 4 link"
+                  },
+                  "QP": "QP links"
+              },
+              "Big Data Analytics": {
+                  "syllabus": "Big Data Analytics syllabus link ",
+                  "notes": {
+                  "unit 1": " Big Data Analytics notes unit 1 link",
+                  "unit 2": " Big Data Analytics notes unit 2 link",
+                  "unit 3": " Big Data Analytics notes unit 3 link",
+                  "unit 4": " Big Data Analytics notes unit 4 link"
+                  },
+                  "QP": "QP links"
+              },
+              "Open Elective-||": {
+                  "syllabus": "Open Elective-|| syllabus link ",
+                  "notes": {
+                  "unit 1": " Open Elective-|| notes unit 1 link",
+                  "unit 2": " Open Elective-|| notes unit 2 link",
+                  "unit 3": " Open Elective-|| notes unit 3 link",
+                  "unit 4": " Open Elective-|| notes unit 4 link"
+                  },
+                  "QP": "QP links"
+              }
+          },
+          "practicals": {
+              "Machine Learning labs": {
+                  "syllabus": "Machine Learning syllabus link "
+              },
+              "Big Data Analytics labs": {
+                  "syllabus": "Big Data Analytics syllabus link "
+              }
+          }
       }
     }
   }
+}

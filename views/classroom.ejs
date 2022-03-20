@@ -72,6 +72,8 @@
 
 
 <script>
+
+
   var acc = document.getElementsByClassName("accordion");
   var i;
 
@@ -98,9 +100,8 @@
   function addsubtodom(element,obj){
     if(subcliked==false){
     for(let i in obj){
-      let p = document.createElement("a");
+      let p = document.createElement("p");
       p.innerText= i;
-      p.href = obj[i].notes;
       p.setAttribute("class","subs");
       element.appendChild(p);
 
@@ -114,9 +115,9 @@
   function addpractodom(element,obj){
     if(practclicked==false){
     for(let i in obj){
-      let p = document.createElement("a");
-      p.innerText= i;
-      p.href = obj[i];
+      let p = document.createElement("p");
+      console.log(i);
+      p.innerText= obj[i];
       p.setAttribute("class","subs");
       element.appendChild(p);
 
@@ -164,6 +165,13 @@
   })
 
 
+  subs.addEventListener("click",()=>{
+    
+    let text = subs.innerText;
+    console.log(text);
+
+
+  })
 
 
 </script>
