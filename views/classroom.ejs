@@ -74,11 +74,15 @@
 <script>
 
 
-  var acc = document.getElementsByClassName("accordion");
-  var i;
 
+  
+  
+  var acc = document.getElementsByClassName("accordion");
+    var i;
+    
   for (i = 0; i < acc.length; i++) {
     acc[i].addEventListener("click", function() {
+      console.log("clicked");
       this.classList.toggle("active");
       var panel = this.nextElementSibling;
       if (panel.style.display === "block") {
@@ -88,90 +92,112 @@
       }
     });
   }
-
+  
   console.log("<%=user.name%>"); //aditya
   console.log("<%=user.Course%>"); //Btech
   console.log("<%=user.Branch%>");  //cse
   console.log("<%=user.Sem%>"); //7
- 
+  
   let subName = document.querySelector(".panel");
   
+  // let subarr = []
+
   let subcliked = false;
   function addsubtodom(element,obj){
     if(subcliked==false){
-    for(let i in obj){
-      let p = document.createElement("p");
-      p.innerText= i;
-      p.setAttribute("class","subs");
-      element.appendChild(p);
-
-    }
-    subcliked=true;
-
+      for(let i in obj){
+        // console.log("i",obj.i.notes);
+        console.log("obj.i",obj[i].notes);
+        let p = document.createElement("a");
+        p.innerText= i;
+        p.target='_blank';
+        p.href=obj[i].notes;
+        p.setAttribute("class","subs");
+        element.appendChild(p);
+        // subarr.push(p)
+      }
+      subcliked=true;
+      // console.log(subarr);
+      
     }
   }
 
-  let practclicked = false;
-  function addpractodom(element,obj){
-    if(practclicked==false){
+  // let pan = document.getElementsByClassName("panel")
+  // pan.addEventListener(subcliked,function(){
+  //   console.log("panel when subclicked");
+  // })
+
+    
+
+
+
+
+let practclicked = false;
+function addpractodom(element,obj){
+  if(practclicked==false){
     for(let i in obj){
       let p = document.createElement("p");
       console.log(i);
       p.innerText= obj[i];
       p.setAttribute("class","subs");
       element.appendChild(p);
-
+      
     }
     practclicked=true;
-
-    }
-  }
-
-  let sub = document.getElementsByClassName("accordion")[0];
-  let pract = document.getElementsByClassName("accordion")[1];
-  
-  sub.addEventListener("click",()=>{
-      
-      var xhttp = new XMLHttpRequest();              
-      // Typical action to be performed when the document is ready:
-      
-      
-      xhttp.addEventListener("load",function(res){
-        var obj = JSON.parse(xhttp.responseText);
-        console.log("daa",obj);
-        addsubtodom(document.getElementsByClassName("panel")[0],obj);
-        
-      });
-      xhttp.open("get", "/subdata",true);
-      xhttp.setRequestHeader('Content-Type', 'application/json');
-      xhttp.send(); 
-      
     
-    })
-  pract.addEventListener("click",()=>{
-    var xhttp = new XMLHttpRequest();
-    xhttp.addEventListener("load",function(res){
-      var pobj = JSON.parse(xhttp.responseText);
-      console.log("practical",pobj);
-      addpractodom(document.getElementsByClassName("panel")[1],pobj);
-      
-    });
-      
+  }
+}
+
+let sub = document.getElementsByClassName("accordion")[0];
+let pract = document.getElementsByClassName("accordion")[1];
+
+sub.addEventListener("click",()=>{
+  
+  var xhttp = new XMLHttpRequest();              
+  // Typical action to be performed when the document is ready:
+  
+  
+  xhttp.addEventListener("load",function(res){
+    var obj = JSON.parse(xhttp.responseText);
+    console.log("daa",obj);
+    addsubtodom(document.getElementsByClassName("panel")[0],obj);
+    
+  });
+  xhttp.open("get", "/subdata",true);
+  xhttp.setRequestHeader('Content-Type', 'application/json');
+  xhttp.send(); 
+  
+  
+})
+pract.addEventListener("click",()=>{
+  var xhttp = new XMLHttpRequest();
+  xhttp.addEventListener("load",function(res){
+    var pobj = JSON.parse(xhttp.responseText);
+    console.log("practical",pobj);
+    addpractodom(document.getElementsByClassName("panel")[1],pobj);
+    
+  });
+  
     xhttp.open("get", "/pracdata",true);
     xhttp.setRequestHeader('Content-Type', 'application/json');
     xhttp.send(); 
-      
+    
     
   })
-
+  
 
   subs.addEventListener("click",()=>{
-    
-    let text = subs.innerText;
-    console.log(text);
+      
+      let text = subs.innerText;
+      console.log(text);
+  
+  
+    })
+  
+  
+  
 
-
-  })
+  
 
 
 </script>

@@ -549,16 +549,16 @@
           "subjects":{
 
           "Neural Network" : { 
-                "notes":"material"
+                "notes":"https://drive.google.com/file/d/1lPWSziVwHfsgXSv-Id8L0Vg2EYHMEb58/view?usp=sharing"
               }
           ,"Web Mining" : { 
-            "notes":"Btech/cse/7/"
+            "notes":"https://drive.google.com/file/d/18u6lIMiNAHDysaGaNDzuZWPHBbCW-GoF/view?usp=sharing"
           }
           ,"Network security and cryptography" : { 
-            "notes":"Btech/cse/7/"
+            "notes":"https://drive.google.com/file/d/1g0_N4KEhhl5wLdIwk8R56MGAOQubOdLR/view?usp=sharing"
           }
           ,"English for Professionals" : { 
-            "link1":"Btech/cse/7/"
+            "link1":"https://drive.google.com/file/d/12ydvKlV7L5FD4sN7CVsTsBRYHzpgBChO/view?usp=sharing"
           }
           },
           "practical":["Neural Network labs"],
